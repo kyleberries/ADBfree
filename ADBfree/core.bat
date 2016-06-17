@@ -46,6 +46,7 @@ goto end
 cls
 ECHO ________________________________________________________________________________________________________________________  
 echo                                 Enable USB Debugging and plug device into USB port.
+echo                            Go to Contacts>settings>import/export and export to local storage.
 adb wait-for-device devices 1>NUL
 adb backup -noapk -f backup.ab
 ECHO ________________________________________________________________________________________________________________________  
@@ -55,6 +56,8 @@ adb kill-server
 adb wait-for-device devices 1>NUL
 adb restore backup.ab
 del /f .\backup.ab
+ECHO ________________________________________________________________________________________________________________________  
+ECHO                   Don't forget to go back to contacts and IMPORT the contacts to the new phone!
 pause
 goto end
 :killadb
