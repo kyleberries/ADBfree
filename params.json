@@ -1,5 +1,5 @@
 {
-  "name": "Adbfree",
+  "name": "ADBfree",
   "tagline": "ADB android diagnostic and repair tool",
   "body": "### Welcome to ADBfree.\r\nThis program is a collection of ADB related tools to help in diagnosing and repairing Android Phones\r\n\r\n### Features\r\n+ Factory Reset\r\n+ Data Transfer\r\n+ Reboot to Download(ODIN) mode\r\n+ Control Phone from PC (ADBcontrol)\r\n+ More coming soon...\r\n\r\n### Bugs\r\nPlease let me know by phone, WhatsApp or at kyleberries@gmail.com\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
