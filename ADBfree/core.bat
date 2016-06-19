@@ -78,7 +78,6 @@ pause
 goto end
 :adbcontrol
 java -jar adbcontrol.jar
-pause
 goto end
 :end
 cls
