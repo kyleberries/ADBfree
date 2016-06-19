@@ -47,15 +47,15 @@ cls
 ECHO ________________________________________________________________________________________________________________________  
 echo                                 Enable USB Debugging and plug device into USB port.
 echo                            Go to Contacts>settings>import/export and export to local storage.
-adb wait-for-device devices 1>NUL
+adb wait-for-device devices
 mkdir adbpull
 adb pull /storage/sdcard0/ adbpull/
-adb backup -noapk -f backup.ab
+adb backup -noapk -shared -f backup.ab
 ECHO ________________________________________________________________________________________________________________________  
 ECHO                 Data dump complete. Please unplug Sending device and plug in Recieving device.
 pause
 adb kill-server
-adb wait-for-device devices 1>NUL2
+adb wait-for-device devices
 adb restore backup.ab
 adb push ./adbpull /storage/sdcard0/
 del /f .\backup.ab
